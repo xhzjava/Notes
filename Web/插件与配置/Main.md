@@ -1,6 +1,6 @@
 **1. Emmet**
-* 快速生成模板
-![](./image/2021-11-07-19-38-10.png)
+* 快速生成模板  
+![](./image/2021-11-07-19-38-10.png)  
 $\Downarrow$
 ```html
 <!DOCTYPE html>
@@ -16,8 +16,8 @@ $\Downarrow$
 </body>
 </html>
 ```
-* 快速生成嵌套模板
-![](./image/2021-11-07-19-53-28.png)
+* 快速生成嵌套模板  
+![](./image/2021-11-07-19-53-28.png)  
 $\Downarrow$
 ```html
 <ui>
