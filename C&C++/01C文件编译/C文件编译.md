@@ -111,3 +111,9 @@ gcc -S test.i -o test.s
 gcc -c test.s -o test.o
 gcc test.o -o test.exe
 ```
+
+可简化为：
+```c
+gcc -c test.c -o test.o
+gcc test.o -o test.exe
+```
