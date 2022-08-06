@@ -88,3 +88,12 @@ mingw32-make.exe
     ]
 }
 ```
+
+### 4）CMakeLists,txt  
+
+```c
+project("excute")
+include_directories(include)
+aux_source_directory(src SRC_LIST)
+add_executable(${PROJECT_NAME} ${SRC_LIST})
+```
