@@ -1,3 +1,5 @@
+## 1、插件
+
 **1. Emmet**
 * 快速生成模板  
 ![](./image/2021-11-07-19-38-10.png)  
@@ -30,6 +32,7 @@ settings => Linked Editing
 ```
 **2. Liver Server**
 ```c
+打开一个简单的服务器,支持自动刷新
 ALT L + ALT O ：显示网页
 ```
 **3. Prettier**
@@ -48,5 +51,38 @@ settings=>format=>prettier
 ```
 **6. Vetur**
 ```c
-Vue插件，具体见官方文档
+Vue插件，语法高亮、智能感知、Emmet等，具体见官方文档
 ```
+
+**7. ESLint**
+```c
+语法纠错；检测代码语法、格式问题
+```
+
+## 2、node.js
+
+### 1）安装nvm
+
+搜索：nvm-windows release
+
+### 2）mirror修改在国内
+
+修改settings.txt
+
+```c
+//新增
+node_mirror: npm.taobao.org/mirrors/node/
+npm_mirror: npm.taobao.org/mirrors/npm/
+```
+
+### 2）git bash
+
+```c
+nvm list available
+nvm install 16.16.0
+nvm use 16.16.0
+```
+
+![nvm_list](image/nvm_list.png)
+
+
