@@ -1,10 +1,12 @@
 # 3、基于cmake
 
-## 1）CMakeList.txt
+## 1）CMakeLists.txt
 
 ```c
-project（"MYSWAP"）
-add_executable（my_cmake_swap main.cpp swap.cpp）
+project("execute")
+include_directories(include)
+aux_source_directory(src SRC_LIST)
+add_executable(${PROJECT_NAME} ${SRC_LIST})
 ```
 
 ## 2）多文件编译
@@ -12,6 +14,7 @@ add_executable（my_cmake_swap main.cpp swap.cpp）
 ```c
 ctrl + shift + p
 CMake Configure
+CMake: Select a kit
 ```
 
 * 或
@@ -43,7 +46,7 @@ mingw32-make.exe
             "name": "（gdb） 启动",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/out.exe",
+            "program": "${workspaceFolder}/build/execute.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
@@ -98,13 +101,4 @@ mingw32-make.exe
         }
     ]
 }
-```
-
-## 4）CMakeLists.txt  
-
-```c
-project("excute")
-include_directories(include)
-aux_source_directory(src SRC_LIST)
-add_executable(${PROJECT_NAME} ${SRC_LIST})
 ```
