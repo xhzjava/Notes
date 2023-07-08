@@ -1,15 +1,21 @@
-## 3、基于cmake
-### 1）CMakeList.txt
+# 3、基于cmake
+
+## 1）CMakeList.txt
+
 ```c
 project（"MYSWAP"）
 add_executable（my_cmake_swap main.cpp swap.cpp）
 ```
-### 2）多文件编译
+
+## 2）多文件编译
+
 ```c
 ctrl + shift + p
 CMake Configure
 ```
+
 * 或
+
 ```c
 mkdir build
 cd build
@@ -17,12 +23,15 @@ cd build
 // 仅第一次使用cmake时使用（ cmake -G "MinGw Makefiles"..）后面可使用（cmake..）
 cmake ..
 ```
+
 ```c
 mingw32-make.exe
 ``` 
-### 3）配置
 
-#### （1）launch.json --for debug
+## 3）配置
+
+### （1）launch.json --for debug
+
 ```c
 {
     // Use IntelliSense to learn about possible attributes.
@@ -54,7 +63,9 @@ mingw32-make.exe
     ]
 }
 ```
-#### （2） tasks.json --for build before debug
+
+### （2） tasks.json --for build before debug
+
 ```c
 {
     "version": "2.0.0",
@@ -89,7 +100,7 @@ mingw32-make.exe
 }
 ```
 
-### 4）CMakeLists,txt  
+## 4）CMakeLists.txt  
 
 ```c
 project("excute")
